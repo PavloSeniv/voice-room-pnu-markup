@@ -1,0 +1,615 @@
+@charset "UTF-8";
+/*-------- Write Fonts Start -------*/
+/*-------- Write Fonts End -------*/
+/*-------- Import Start -------*/
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Black.woff") format("woff"), url("../fonts/Nunito-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-BlackItalic.woff") format("woff"), url("../fonts/Nunito-BlackItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Bold.woff") format("woff"), url("../fonts/Nunito-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-BoldItalic.woff") format("woff"), url("../fonts/Nunito-BoldItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-ExtraBold.woff") format("woff"), url("../fonts/Nunito-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-ExtraLightItalic.woff") format("woff"), url("../fonts/Nunito-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Italic.woff") format("woff"), url("../fonts/Nunito-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-LightItalic.woff") format("woff"), url("../fonts/Nunito-LightItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Light.woff") format("woff"), url("../fonts/Nunito-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-MediumItalic.woff") format("woff"), url("../fonts/Nunito-MediumItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-ExtraBoldItalic.woff") format("woff"), url("../fonts/Nunito-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Medium.woff") format("woff"), url("../fonts/Nunito-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-ExtraLight.woff") format("woff"), url("../fonts/Nunito-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-SemiBold.woff") format("woff"), url("../fonts/Nunito-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nunito;
+  font-display: swap;
+  src: url("../fonts/Nunito-SemiBoldItalic.woff") format("woff"), url("../fonts/Nunito-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+/*-------- Обнулення -------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*-------- Обнулення -------*/
+body._lock {
+  overflow: hidden;
+}
+
+.header {
+  max-width: 1440px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--header-bg-color);
+  font-family: Poppins;
+  border-bottom: 1px solid var(--header-bg-color);
+}
+@media (max-width: 1199px) {
+  .header {
+    position: fixed;
+  }
+}
+
+.header__container {
+  max-width: var(--header-width-container);
+  margin: 0 100px;
+  padding: 44px 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header__container {
+    flex-direction: column;
+    padding: 26px 0;
+    justify-content: center;
+    margin: 0 20px;
+  }
+}
+.header__block-nav {
+  width: 100%;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header__logo:hover {
+  color: #000;
+}
+
+.header__logo._active {
+  display: none;
+}
+
+.header__logo-mobile-title {
+  display: none;
+}
+
+.header__logo-mobile-title._active {
+  display: block;
+  z-index: 5;
+  position: relative;
+  top: -22px;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.menu__body {
+  width: 100%;
+  display: grid;
+  column-gap: 24px;
+  align-items: center;
+  grid-template-areas: "menu__nav log-in-out";
+  justify-items: start;
+  align-content: space-between;
+}
+@media (max-width: 991px) {
+  .menu__body {
+    row-gap: 41px;
+  }
+}
+.menu__nav {
+  display: flex;
+  width: 100%;
+  grid-area: menu__nav;
+  justify-content: flex-end;
+}
+@media (max-width: 991px) {
+  .menu__nav {
+    justify-content: center;
+  }
+}
+
+.menu__list > li {
+  position: relative;
+  height: 20px;
+  text-align: center;
+}
+.menu__list {
+  display: flex;
+  column-gap: 80px;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .menu__list {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+}
+
+.menu__list-link:hover::after {
+  content: "";
+  display: block;
+  background-color: #c4c4c4;
+  width: 35px;
+  height: 4px;
+  border-radius: 100px;
+}
+
+.log-in-out {
+  column-gap: 25px;
+  width: 100%;
+  display: flex;
+  grid-area: log-in-out;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .log-in-out {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+
+.menu__list-link-login {
+  grid-area: menu__list-link-login;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+@media (max-width: 1399px) {
+  .menu__list-link-login {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.menu__login {
+  color: #fff;
+}
+.menu__login:hover {
+  color: #000;
+}
+@media (max-width: 1199px) {
+  .menu__login {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .menu__login:hover {
+    color: #333 !important;
+  }
+}
+
+.menu__list-link-sign-up {
+  width: 128px;
+  height: 49px;
+  display: flex;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%), #fff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 44px;
+  color: #fff;
+}
+.menu__list-link-sign-up:hover {
+  background: linear-gradient(100.54deg, #ff7b4e 5.57%, #ff584e 70.03%), #fff;
+  cursor: pointer;
+}
+.menu__list-link-sign-up:hover .menu__sign-up {
+  color: #000;
+}
+.menu__sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__link {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@media (max-width: 991px) {
+  .header__block-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu__body {
+    z-index: 2;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-areas: "menu__nav" "log-in-out";
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-columns: 1fr;
+    padding: 0 0 24px 0;
+  }
+
+  .menu__list-input {
+    display: none;
+  }
+
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+  }
+
+  .menu__icon._active {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+  }
+
+  .menu__icon span,
+.menu__icon::before {
+    left: 0;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--header-bg-menu-icon-mobile);
+  }
+
+  .menu__icon::after {
+    right: 0;
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--header-bg-menu-icon-mobile);
+  }
+
+  .menu__icon::before,
+.menu__icon::after {
+    content: "";
+  }
+
+  .menu__icon::before {
+    top: 0;
+  }
+
+  .menu__icon span {
+    top: 60%;
+    transform: scale(1) translate(0px, -50%);
+  }
+
+  .menu__icon::after {
+    top: 100%;
+  }
+
+  .menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, 0%);
+  }
+
+  .menu__icon._active::after {
+    top: 50%;
+    width: 100%;
+    transform: rotate(45deg) translate(0, 0%);
+  }
+
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-bg-menu-body-mobile);
+    padding: 70px 15px 0 15px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+
+  .menu__body._active {
+    left: 0;
+  }
+
+  .menu__body._active::before {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--header-bg-color-mobile);
+    z-index: 2;
+  }
+
+  .menu__link {
+    font-size: 28px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: 18px;
+  }
+  .menu__link:hover {
+    color: #000000;
+  }
+}
+/*-------- Import End -------*/
+/*-------- Page Index Start -------*/
+/*-------- All Start -------*/
+body {
+  background-color: #5B75A6;
+}
+
+* {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #5B75A6;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #bdbdbd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5B75A6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(5, 37, 95, 0.25)), color-stop(0.5, transparent), to(transparent));
+}
+
+/*-------- All End -------*/
+.__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main__container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+}
+
+.main__bg {
+  max-width: 1300px;
+  width: 100%;
+  height: 720px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*-------- Main Start -------*/
+/*-------- Main End -------*/
