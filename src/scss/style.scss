@@ -374,59 +374,93 @@
 }
 
 .rooms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+
   &__container {
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
   }
+
   &__info {
   }
+
   &__info-title {
   }
+
   &__title {
   }
+
   &__button-explore {
   }
+
   &__button-explore-title {
   }
+
   &__new-room {
   }
+
   &__new-room-title {
   }
+
   &__list-bg {
   }
+
   &__list {
   }
+
   &__list-item {
   }
+
   &__list-item-title {
   }
+
   &__list-img-user {
   }
+
   &__list-img-user-avatar {
   }
+
   &__list-item-users {
   }
+
   &__list-item-users-block {
   }
+
   &__list-item-users-name {
   }
+
   &__list-item-count-user {
   }
+
   &__list-item-count-user-rooms {
   }
+
   &__list-item-count-user-rooms-title {
   }
+
   &__list-item-count-user-voice {
   }
+
   &__list-item-count-user-voice-title {
   }
 }
+
 .bi {
 }
+
 .bi-mortarboard-fill {
 }
+
 .bi-mic-fill {
 }
+
 .bi-person-fill {
 }
+
 .bi-mic {
 }
 
