@@ -131,17 +131,6 @@ h6 {
 /*-------- Import End -------*/
 /*-------- Page Index Start -------*/
 /*-------- All Start -------*/
-body {
-  background-color: #5b75a6;
-}
-
-* {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 17px;
-  color: #000000;
-}
-
 ::selection {
   color: #ffffff;
   background-color: #5b75a6;
@@ -162,11 +151,11 @@ body {
 }
 
 /*-------- All End -------*/
-.bg__white {
-  background-color: #fff;
+/*-------- Main Start -------*/
+.bg__login {
+  background-color: #5b75a6;
 }
 
-/*-------- Main Start -------*/
 .main {
   display: flex;
   flex-direction: column;
@@ -470,6 +459,13 @@ body {
 }
 
 /*-------- Main End -------*/
+/*-------- Rooms Start -------*/
+.bg__white {
+  background-color: #fff;
+}
+
+/*-------- Rooms End -------*/
+/*-------- Developer Block Start -------*/
 .link-login {
   display: flex;
   position: absolute;
@@ -489,3 +485,5 @@ body {
 .link-login__next:hover {
   color: #fff;
 }
+
+/*-------- Developer Block End -------*/

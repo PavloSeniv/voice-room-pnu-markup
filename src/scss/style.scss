@@ -23,16 +23,6 @@
 /*-------- Page Index Start -------*/
 
 /*-------- All Start -------*/
-body {
-  background-color: #5b75a6;
-}
-
-* {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 17px;
-  color: #000000;
-}
 
 ::selection {
   color: #ffffff;
@@ -61,10 +51,13 @@ body {
 }
 
 /*-------- All End -------*/
-.bg__white {
-  background-color: #fff;
-}
+
 /*-------- Main Start -------*/
+
+.bg__login {
+  background-color: #5b75a6;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -374,6 +367,72 @@ body {
 
 /*-------- Main End -------*/
 
+/*-------- Rooms Start -------*/
+
+.bg__white {
+  background-color: #fff;
+}
+
+.rooms {
+  &__container {
+  }
+  &__info {
+  }
+  &__info-title {
+  }
+  &__title {
+  }
+  &__button-explore {
+  }
+  &__button-explore-title {
+  }
+  &__new-room {
+  }
+  &__new-room-title {
+  }
+  &__list-bg {
+  }
+  &__list {
+  }
+  &__list-item {
+  }
+  &__list-item-title {
+  }
+  &__list-img-user {
+  }
+  &__list-img-user-avatar {
+  }
+  &__list-item-users {
+  }
+  &__list-item-users-block {
+  }
+  &__list-item-users-name {
+  }
+  &__list-item-count-user {
+  }
+  &__list-item-count-user-rooms {
+  }
+  &__list-item-count-user-rooms-title {
+  }
+  &__list-item-count-user-voice {
+  }
+  &__list-item-count-user-voice-title {
+  }
+}
+.bi {
+}
+.bi-mortarboard-fill {
+}
+.bi-mic-fill {
+}
+.bi-person-fill {
+}
+.bi-mic {
+}
+
+/*-------- Rooms End -------*/
+
+/*-------- Developer Block Start -------*/
 .link-login {
   display: flex;
   position: absolute;
@@ -388,3 +447,4 @@ body {
     }
   }
 }
+/*-------- Developer Block End -------*/
