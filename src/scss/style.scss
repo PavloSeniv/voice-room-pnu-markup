@@ -880,3 +880,124 @@
   }
 }
 /*-------- Developer Block End -------*/
+
+main {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+
+    &.active {
+      display: none;
+    }
+  }
+
+  &__button-open-pop-up {
+    display: block;
+    height: 34px;
+    padding: 9px 10px;
+    border-radius: 10px;
+    border: solid 1px #979797;
+    background-color: #d8d8d8;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 15px;
+    color: #000;
+
+    &.active {
+      display: none;
+    }
+    &:hover {
+      background-color: #979797;
+      color: #fff;
+    }
+  }
+}
+
+.__container-1 {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+/*-------- Main End -------*/
+
+/*-------- Pop Up Start -------*/
+.__container-2 {
+  padding: 46px 39px;
+  background: rgba(0, 0, 0, 0.5);
+  @media (max-width: 1919px) {
+    padding: 1vmax;
+  }
+}
+
+.pop-up {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+
+  &.active {
+    // При добавлении класса 'active'
+    display: block;
+    opacity: 1; // Показываем фон и попап
+    pointer-events: all; // Возвращаем события
+    transition: 0.5s all;
+  }
+
+  &__bg-container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+  &__dialog {
+    max-width: 1842px;
+    width: 700px;
+    height: 699px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 20px 20px 60px;
+    position: relative;
+    top: 8%;
+    @media (max-width: 1879px) {
+      padding: 1vmax;
+    }
+  }
+
+  &__title {
+    width: 80%;
+    height: 16px;
+    display: flex;
+    column-gap: 3px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 23px;
+    right: 14px;
+    &:hover {
+      cursor: pointer;
+    }
+    & svg:hover {
+      transform: scale(1.1);
+      transition: all 0.5s linear;
+    }
+  }
+}
+
+.body {
+  overflow-y: scroll;
+}
+
+.body.active {
+  overflow-y: hidden;
+}

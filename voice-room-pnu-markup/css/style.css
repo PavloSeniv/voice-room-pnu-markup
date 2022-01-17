@@ -1044,3 +1044,116 @@ h6 {
 }
 
 /*-------- Developer Block End -------*/
+main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+main__container.active {
+  display: none;
+}
+main__button-open-pop-up {
+  display: block;
+  height: 34px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+  font-family: TimesNewRomanPSMT;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 15px;
+  color: #000;
+}
+main__button-open-pop-up.active {
+  display: none;
+}
+main__button-open-pop-up:hover {
+  background-color: #979797;
+  color: #fff;
+}
+
+.__container-1 {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/*-------- Main End -------*/
+/*-------- Pop Up Start -------*/
+.__container-2 {
+  padding: 46px 39px;
+  background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1919px) {
+  .__container-2 {
+    padding: 1vmax;
+  }
+}
+
+.pop-up {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+.pop-up.active {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.pop-up__bg-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.pop-up__dialog {
+  max-width: 1842px;
+  width: 700px;
+  height: 699px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 20px 20px 60px;
+  position: relative;
+  top: 8%;
+}
+@media (max-width: 1879px) {
+  .pop-up__dialog {
+    padding: 1vmax;
+  }
+}
+.pop-up__title {
+  width: 80%;
+  height: 16px;
+  display: flex;
+  column-gap: 3px;
+}
+.pop-up__close {
+  position: absolute;
+  top: 23px;
+  right: 14px;
+}
+.pop-up__close:hover {
+  cursor: pointer;
+}
+.pop-up__close svg:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+
+.body {
+  overflow-y: scroll;
+}
+
+.body.active {
+  overflow-y: hidden;
+}
