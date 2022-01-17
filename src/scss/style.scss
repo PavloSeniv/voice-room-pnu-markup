@@ -701,6 +701,169 @@
     @include adaptiv-font(35, 20);
   }
 }
+/*-------- People End -------*/
+
+/*-------- About Start -------*/
+
+.about {
+  margin-top: 70px;
+
+  &__container {
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__info-title {
+    display: flex;
+    column-gap: 46px;
+    justify-content: center;
+    margin-top: 77px;
+    align-items: center;
+  }
+
+  &__title {
+    @include font(600, 30px, 41px, #000);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__user-bg {
+    background-color: #f1efe5;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 54px;
+    height: max-content;
+  }
+
+  &__user-container {
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__user-row {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  &__user-info {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__user-info-main {
+    display: flex;
+    column-gap: 54px;
+    align-items: center;
+  }
+
+  &__user-info-main-photo {
+    width: 120px;
+    height: 120px;
+    border: 1.875px solid rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+  }
+
+  &__user-info-username {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__username {
+    @include font(bold, 42px, 57px, #000);
+    @include adaptiv-font(42, 21);
+  }
+
+  &__logname {
+    @include font(normal, 30px, 41px, #333);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__user-button-follow {
+    width: 300px;
+    height: 70px;
+    border: 6px solid #5b75a6;
+    border-radius: 45px;
+    background: unset;
+    @include font(600, 30px, 41px, #5b75a6);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__user-bio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__user-bio-info {
+    @include font(600, 30px, 41px, #333);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__user-subscripe {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__user-subscripe-info {
+    background: #ffffff;
+    border-radius: 30px;
+    width: 411.6px;
+    height: 114px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+  }
+
+  &__user-followers-count {
+    @include font(bold, 42px, 57px, #333);
+    @include adaptiv-font(42, 21);
+  }
+
+  &__user-followers-title {
+    @include font(normal, 30px, 41px, #333);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__user-following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+  }
+
+  &__user-following-count {
+    @include font(bold, 42px, 57px, #333);
+    @include adaptiv-font(42, 21);
+  }
+
+  &__user-following-title {
+    @include font(normal, 30px, 41px, #333);
+    @include adaptiv-font(30, 21);
+  }
+}
+
+/*-------- About End -------*/
+
 /*-------- Developer Block Start -------*/
 .link-login {
   display: flex;

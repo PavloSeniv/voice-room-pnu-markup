@@ -840,6 +840,188 @@ h6 {
   font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
 }
 
+/*-------- People End -------*/
+/*-------- About Start -------*/
+.about {
+  margin-top: 70px;
+}
+.about__container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.about__info-title {
+  display: flex;
+  column-gap: 46px;
+  justify-content: center;
+  margin-top: 77px;
+  align-items: center;
+}
+.about__title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.about__user-bg {
+  background-color: #f1efe5;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: 54px;
+  height: max-content;
+}
+.about__user-container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about__user-row {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.about__user-info {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.about__user-info-main {
+  display: flex;
+  column-gap: 54px;
+  align-items: center;
+}
+.about__user-info-main-photo {
+  width: 120px;
+  height: 120px;
+  border: 1.875px solid rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+}
+.about__user-info-username {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.about__username {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000;
+  font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
+}
+.about__logname {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.about__user-button-follow {
+  width: 300px;
+  height: 70px;
+  border: 6px solid #5b75a6;
+  border-radius: 45px;
+  background: unset;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #5b75a6;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.about__user-bio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.about__user-bio-info {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.about__user-subscripe {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: end;
+}
+.about__user-subscripe-info {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 411.6px;
+  height: 114px;
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.about__user-followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
+}
+.about__user-followers-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #333;
+  font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
+}
+.about__user-followers-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.about__user-following {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
+}
+.about__user-following-count {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #333;
+  font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
+}
+.about__user-following-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+
+/*-------- About End -------*/
 /*-------- Developer Block Start -------*/
 .link-login {
   display: flex;
