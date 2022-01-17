@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*-------- Write Fonts Start -------*/
-/*-------- Write Fonts End -------*/
-/*-------- Import Start -------*/
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -128,6 +125,7 @@ h6 {
 }
 
 /*-------- Обнулення -------*/
+/*-------- Header Start -------*/
 .header {
   max-width: 1580px;
   width: 100%;
@@ -159,9 +157,8 @@ h6 {
   border-radius: 15px;
 }
 
-/*-------- Import End -------*/
-/*-------- Page Index Start -------*/
-/*-------- All Start -------*/
+/*-------- Header End -------*/
+/*-------- Scrollbar Start -------*/
 ::selection {
   color: #ffffff;
   background-color: #5b75a6;
@@ -181,8 +178,8 @@ h6 {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(5, 37, 95, 0.25)), color-stop(0.5, transparent), to(transparent));
 }
 
-/*-------- All End -------*/
-/*-------- Main Start -------*/
+/*-------- Scrollbar End -------*/
+/*-------- Login Start -------*/
 .bg__login {
   background-color: #5b75a6;
 }
@@ -489,7 +486,7 @@ h6 {
   margin-top: 30px;
 }
 
-/*-------- Main End -------*/
+/*-------- Login End -------*/
 /*-------- Rooms Start -------*/
 .bg__white {
   background-color: #fff;
@@ -678,6 +675,171 @@ h6 {
 }
 
 /*-------- Rooms End -------*/
+/*-------- People Start -------*/
+.people {
+  margin-top: 70px;
+}
+.people__container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+}
+.people__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.people__info-title {
+  display: flex;
+  column-gap: 46px;
+  justify-content: center;
+  margin-top: 77px;
+  align-items: center;
+}
+.people__title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000;
+  font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+}
+.people__list-user-bg {
+  background-color: #f1efe5;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: 54px;
+  height: max-content;
+}
+.people__list-user-container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+}
+.people__list-info-room {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.people__list-room-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+.people__block-leave {
+  display: flex;
+  column-gap: 34px;
+}
+.people__button-hand {
+  width: 70px;
+  height: 70px;
+  background: #f2f2f2;
+  border-radius: 50px;
+}
+.people__button-leave {
+  padding: 5px;
+  width: 260.4px;
+  height: 70px;
+  background: #f2f2f2;
+  border-radius: 60px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #55ab67;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+.people__list-voice-user {
+  display: flex;
+  gap: 40px 10px;
+}
+.people__list-voice-user-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+}
+.people__list-voice-user-block-photo {
+  border: 4px solid #5b75a6;
+  border-radius: 35px;
+  position: relative;
+  padding: 5px;
+}
+.people__list-voice-user-item-photo {
+  width: 105px;
+  height: 105px;
+  border-radius: 35px;
+  border: 1.875px solid rgba(0, 0, 0, 0.2);
+}
+.people__list-voice-user-item-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0px 1px 8px rgba(51, 51, 51, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.people__list-voice-user-item-active svg {
+  fill: #000;
+}
+.people__list-voice-user-item-name {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+  color: #000;
+  font-size: calc(25px + 10 * ((100vw - 320px) / 1600));
+}
+.people__block-users {
+  margin-top: 12px;
+}
+.people__block-users-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+.people__block-users-list {
+  margin-top: 39px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 29px;
+}
+.people__block-users-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+.people__block-users-photo {
+  width: 105px;
+  height: 105px;
+  border-radius: 35px;
+}
+.people__block-users-name {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+  color: #000;
+  font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
+}
+
 /*-------- Developer Block Start -------*/
 .link-login {
   display: flex;

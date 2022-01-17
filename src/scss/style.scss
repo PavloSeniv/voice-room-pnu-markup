@@ -1,4 +1,5 @@
-/*-------- Write Fonts Start -------*/
+//-------- Write Fonts Start -------
+
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {
     font-family: $font_name;
@@ -8,9 +9,9 @@
     font-style: #{$style};
   }
 }
-/*-------- Write Fonts End -------*/
+//-------- Write Fonts End -------
 
-/*-------- Import Start -------*/
+//-------- Import Start -------
 @import "_fonts";
 @import "_media";
 @import "_nullstyle";
@@ -18,11 +19,9 @@
 @import "_mixin";
 @import "_vars";
 @import "header/_style_header";
-/*-------- Import End -------*/
+//-------- Import End -------
 
-/*-------- Page Index Start -------*/
-
-/*-------- All Start -------*/
+/*-------- Scrollbar Start -------*/
 
 ::selection {
   color: #ffffff;
@@ -50,9 +49,9 @@
   );
 }
 
-/*-------- All End -------*/
+/*-------- Scrollbar End -------*/
 
-/*-------- Main Start -------*/
+/*-------- Login Start -------*/
 
 .bg__login {
   background-color: #5b75a6;
@@ -365,7 +364,7 @@
   }
 }
 
-/*-------- Main End -------*/
+/*-------- Login End -------*/
 
 /*-------- Rooms Start -------*/
 
@@ -544,7 +543,164 @@
   }
 }
 /*-------- Rooms End -------*/
+/*-------- People Start -------*/
 
+.people {
+  margin-top: 70px;
+
+  &__container {
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__info-title {
+    display: flex;
+    column-gap: 46px;
+    justify-content: center;
+    margin-top: 77px;
+    align-items: center;
+  }
+
+  &__title {
+    @include font(600, 30px, 41px, #000);
+    @include adaptiv-font(30, 21);
+  }
+
+  &__list-user-bg {
+    background-color: #f1efe5;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: 54px;
+    height: max-content;
+  }
+
+  &__list-user-container {
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__list-info-room {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-room-title {
+    @include font(bold, 42px, 57px, #000);
+    @include adaptiv-font(42, 20);
+  }
+
+  &__block-leave {
+    display: flex;
+    column-gap: 34px;
+  }
+
+  &__button-hand {
+    width: 70px;
+    height: 70px;
+    background: #f2f2f2;
+    border-radius: 50px;
+  }
+
+  &__button-leave {
+    padding: 5px;
+    width: 260.4px;
+    height: 70px;
+    background: #f2f2f2;
+    border-radius: 60px;
+    @include font(600, 30px, 40px, #55ab67);
+    @include adaptiv-font(30, 20);
+  }
+
+  &__list-voice-user {
+    display: flex;
+    gap: 40px 10px;
+  }
+
+  &__list-voice-user-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+  }
+
+  &__list-voice-user-block-photo {
+    border: 4px solid #5b75a6;
+    border-radius: 35px;
+    position: relative;
+    padding: 5px;
+  }
+
+  &__list-voice-user-item-photo {
+    width: 105px;
+    height: 105px;
+    border-radius: 35px;
+    border: 1.875px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__list-voice-user-item-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0px 1px 8px rgba(51, 51, 51, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
+    & svg {
+      fill: #000;
+    }
+  }
+
+  &__list-voice-user-item-name {
+    @include font(normal, 35px, 48px, #000);
+    @include adaptiv-font(35, 25);
+  }
+
+  &__block-users {
+    margin-top: 12px;
+  }
+
+  &__block-users-title {
+    @include font(bold, 30px, 41px, #333);
+    @include adaptiv-font(30, 20);
+  }
+
+  &__block-users-list {
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 29px;
+  }
+
+  &__block-users-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  &__block-users-photo {
+    width: 105px;
+    height: 105px;
+    border-radius: 35px;
+  }
+
+  &__block-users-name {
+    @include font(normal, 35px, 48px, #000);
+    @include adaptiv-font(35, 20);
+  }
+}
 /*-------- Developer Block Start -------*/
 .link-login {
   display: flex;
