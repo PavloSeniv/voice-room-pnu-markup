@@ -1086,16 +1086,6 @@ main__button-open-pop-up:hover {
 
 /*-------- Main End -------*/
 /*-------- Pop Up Start -------*/
-.__container-2 {
-  padding: 46px 39px;
-  background: rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 1919px) {
-  .__container-2 {
-    padding: 1vmax;
-  }
-}
-
 .pop-up {
   top: 0;
   left: 0;
@@ -1115,13 +1105,22 @@ main__button-open-pop-up:hover {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
+  padding: 46px 39px;
+  background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1919px) {
+  .pop-up__bg-container {
+    padding: 1vmax;
+  }
 }
 .pop-up__dialog {
   max-width: 1842px;
   width: 700px;
   height: 699px;
   margin: 0 auto;
-  background-color: #fff;
+  background: #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
   padding: 30px 20px 20px 60px;
   position: relative;
   top: 8%;
@@ -1131,16 +1130,10 @@ main__button-open-pop-up:hover {
     padding: 1vmax;
   }
 }
-.pop-up__title {
-  width: 80%;
-  height: 16px;
-  display: flex;
-  column-gap: 3px;
-}
 .pop-up__close {
   position: absolute;
-  top: 23px;
-  right: 14px;
+  top: 46px;
+  right: 42px;
 }
 .pop-up__close:hover {
   cursor: pointer;
@@ -1148,6 +1141,101 @@ main__button-open-pop-up:hover {
 .pop-up__close svg:hover {
   transform: scale(1.1);
   transition: all 0.5s linear;
+}
+.pop-up__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.pop-up__title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+.pop-up__name-room {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+  align-self: flex-start;
+  width: 100%;
+}
+.pop-up__title-room-type {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+.pop-up__room-type-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+.pop-up__room-type-item {
+  width: 150px;
+  height: 208px;
+  background: #5b75a6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up__type-bg {
+  width: 115px;
+  height: 105px;
+  background: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pop-up__room-type-name {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  color: #fff;
+  font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
+}
+.pop-up__title-button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+.pop-up__button-create {
+  width: 250px;
+  height: 70px;
+  background: #55ab67;
+  border-radius: 50px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #fff;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .body {

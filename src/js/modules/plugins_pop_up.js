@@ -16,7 +16,7 @@ export function popUp(params) {
       popup.classList.add("active"); // И для самого окна
       button.classList.add("active"); // И для самого окна
       openPopupBlock.classList.add("active"); // И для самого окна
-      bodyNoScroll.classList.add("active"); // 
+      bodyNoScroll.classList.add("active"); //
     });
   });
 
@@ -26,6 +26,7 @@ export function popUp(params) {
     popup.classList.remove("active"); // И с окна
     openPopupButtons.classList.remove("active");
     openPopupBlock.classList.remove("active");
+    bodyNoScroll.classList.remove("active");
   });
 
   document.addEventListener("click", (e) => {
@@ -36,6 +37,7 @@ export function popUp(params) {
       popup.classList.remove("active"); // И с окна
       openPopupButtons.classList.remove("active");
       openPopupBlock.classList.remove("active");
+      bodyNoScroll.classList.remove("active");
     }
   });
 }
