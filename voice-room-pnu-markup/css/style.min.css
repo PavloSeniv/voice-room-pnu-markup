@@ -1197,12 +1197,16 @@ main__button-open-pop-up:hover {
 .pop-up__room-type-item {
   width: 150px;
   height: 208px;
-  background: #5b75a6;
+  background: #979595;
+  color: #000;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.pop-up__room-type-item:hover {
+  background: #5b75a6;
 }
 .pop-up__type-bg {
   width: 115px;
