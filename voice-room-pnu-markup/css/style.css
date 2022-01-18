@@ -564,7 +564,9 @@ h6 {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: max-content;
+  padding: 0 1vmax 2vmax 1vmax;
 }
 .rooms__list-container {
   max-width: 1580px;
@@ -740,7 +742,13 @@ h6 {
   background: #f2f2f2;
   border-radius: 50px;
 }
+.people__button-hand:hover svg {
+  fill: #ebeb0a;
+}
 .people__button-leave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   width: 260.4px;
   height: 70px;
@@ -753,6 +761,10 @@ h6 {
   line-height: 40px;
   color: #55ab67;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+.people__button-leave:hover {
+  background: #5b75a6;
+  color: #000;
 }
 .people__list-voice-user {
   display: flex;

@@ -437,7 +437,9 @@
     background-color: #f1efe5;
     border-radius: 50px 50px 0px 0px;
     margin-top: 54px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
+    padding: 0 1vmax 2vmax 1vmax;
   }
 
   &__list-container {
@@ -606,9 +608,17 @@
     height: 70px;
     background: #f2f2f2;
     border-radius: 50px;
+    &:hover {
+     & svg {
+        fill: rgb(235, 235, 10);
+      }
+    }
   }
 
   &__button-leave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
     width: 260.4px;
     height: 70px;
@@ -616,6 +626,10 @@
     border-radius: 60px;
     @include font(600, 30px, 40px, #55ab67);
     @include adaptiv-font(30, 20);
+    &:hover {
+      background: #5b75a6;
+      color: #000
+    }
   }
 
   &__list-voice-user {

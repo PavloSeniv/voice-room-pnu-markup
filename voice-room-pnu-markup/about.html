@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Seniv Pavlo, https://github.com/PavloSeniv">
   <meta name="copyright" content="Seniv Pavlo">
-  <title>voice-room-pnu-markup</title>
+  <title>about</title>
 
   <!-- ======== Іконка ======== -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -27,13 +27,15 @@
 
   <header class="header">
   <div class="header__container">
-    <div class="header__block-logo">
+    <a href="rooms.html" class="header__block-logo">
       <img src="img/index/main/logo.png" alt="logo" class="header__logo">
-    </div>
+    </a>
 
     <div class="header__user">
-      <h2 class="header__user-name">Seniv Pavlo</h2>
-      <img src="img/index/main/avatar_placeholder.png" alt="avatar_placeholder" class="header__user-avatar">
+      <a href="about.html" class="header__user-name">Seniv Pavlo</a>
+      <a href="about.html">
+        <img src="img/index/main/avatar_placeholder.png" alt="avatar_placeholder" class="header__user-avatar">
+      </a>
     </div>
   </div>
 </header>
@@ -41,7 +43,7 @@
   <main class="about about__container">
 
     <div class="about__info">
-      <a href="#" class="about__info-title">
+      <a href="people.html" class="about__info-title">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-arrow-left"
           viewbox="0 0 16 16">
           <path fill-rule="evenodd"
@@ -66,13 +68,22 @@
               <h3 class="about__logname">@SenivPavlo</h3>
             </div>
 
-            <button type="submit" class="about__user-button-follow">Follow</button>
+            <button onclick="followClick()" type="submit" class="about__user-button-follow">Follow</button>
 
-            <svg width="78" height="65" viewbox="0 0 78 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M36 19.2C36 20.9673 34.6569 22.4 33 22.4C31.3431 22.4 30 20.9673 30 19.2C30 17.4327 31.3431 16 33 16C34.6569 16 36 17.4327 36 19.2ZM36 32C36 33.7673 34.6569 35.2 33 35.2C31.3431 35.2 30 33.7673 30 32C30 30.2327 31.3431 28.8 33 28.8C34.6569 28.8 36 30.2327 36 32ZM33 48C34.6569 48 36 46.5673 36 44.8C36 43.0327 34.6569 41.6 33 41.6C31.3431 41.6 30 43.0327 30 44.8C30 46.5673 31.3431 48 33 48Z"
-                fill="black" />
-            </svg>
+            <!-- <script>
+              function followClick() {
+               a= document.getElementsByClassName("about__user-button-follow");
+               a.style.width= "100px";
+              }
+            </script> -->
+
+            <a href="#">
+              <svg width="78" height="65" viewbox="0 0 78 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M36 19.2C36 20.9673 34.6569 22.4 33 22.4C31.3431 22.4 30 20.9673 30 19.2C30 17.4327 31.3431 16 33 16C34.6569 16 36 17.4327 36 19.2ZM36 32C36 33.7673 34.6569 35.2 33 35.2C31.3431 35.2 30 33.7673 30 32C30 30.2327 31.3431 28.8 33 28.8C34.6569 28.8 36 30.2327 36 32ZM33 48C34.6569 48 36 46.5673 36 44.8C36 43.0327 34.6569 41.6 33 41.6C31.3431 41.6 30 43.0327 30 44.8C30 46.5673 31.3431 48 33 48Z"
+                  fill="black" />
+              </svg>
+            </a>
 
           </div>
 
