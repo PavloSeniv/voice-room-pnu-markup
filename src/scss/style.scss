@@ -742,6 +742,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding: 0 2vmax;
   }
 
   &__info-title {
@@ -768,17 +769,28 @@
     max-width: 1580px;
     width: 100%;
     margin: 0 auto;
+    padding: 2vmax;
   }
 
   &__list-info-room {
+    padding: 2vmax;
     padding-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+    @media (max-width: 877px) {
+      justify-content: center;
+    }
   }
 
   &__list-room-title {
     @include font(bold, 42px, 57px, #000);
     @include adaptiv-font(42, 20);
+    @media (max-width: 575px) {
+      text-align: center;
+    }
   }
 
   &__block-leave {
@@ -803,7 +815,8 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    width: 260.4px;
+    max-width: 260.4px;
+    width: 100%;
     height: 70px;
     background: #f2f2f2;
     border-radius: 60px;
@@ -818,6 +831,12 @@
   &__list-voice-user {
     display: flex;
     gap: 40px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
   }
 
   &__list-voice-user-item {
@@ -878,6 +897,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px 29px;
+    align-items: center;
+    justify-content: center;
   }
 
   &__block-users-item {
