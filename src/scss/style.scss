@@ -1195,8 +1195,9 @@ main {
 
   &__dialog {
     max-width: 1842px;
-    width: 700px;
-    height: 699px;
+    width: 100%;
+    min-height: 699px;
+    max-height: max-content;
     margin: 0 auto;
     background: #ffffff;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1249,8 +1250,12 @@ main {
 
   &__room-type-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     column-gap: 50px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   &__room-type-item {
@@ -1309,4 +1314,8 @@ main {
 
 .body.active {
   overflow-y: hidden;
+  @media (max-width:768px) {
+    overflow-y: scroll;
+    
+  }
 }
