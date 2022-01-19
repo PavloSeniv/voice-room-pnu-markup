@@ -4,6 +4,7 @@
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2vmax;
 
   &__container {
     display: flex;
@@ -16,17 +17,23 @@
   }
 
   &__logo {
+    @media (max-width: 575px) {
+      width: 100px;
+    }
   }
 
   &__user {
     display: flex;
     column-gap: 58px;
     align-items: center;
+    @media (max-width: 575px) {
+      column-gap: 20px;
+    }
   }
 
   &__user-name {
     @include font(bold, 25px, 34px, #000);
-    @include adaptiv-font(25, 34);
+    @include adaptiv-font(25, 15);
   }
 
   &__user-avatar {

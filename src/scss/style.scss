@@ -63,7 +63,7 @@
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  padding: 2vmax 1vmax;
+  padding: 2vmax 2vmax;
 
   &__container {
     max-width: 1920px;
@@ -79,45 +79,69 @@
     height: 100%;
     background-color: #ffffff;
     border-radius: 50px;
-    padding: 1vmax;
+    padding: 2vmax;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 767px) {
+      height: max-content;
+    }
   }
 
   &__bg-login-7 {
     justify-content: center;
     row-gap: 25px;
+    @media (max-width: 767px) {
+      row-gap: 10px;
+    }
   }
 
   &__title {
     @include font(bold, 54px, 74px, #000);
-    @include adaptiv-font(54, 20);
+    @include adaptiv-font(54, 15);
     text-align: center;
   }
 
   &__title-login-1 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-2 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-3 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-4 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-5 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-6 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__title-login-7 {
@@ -128,6 +152,11 @@
     display: flex;
     gap: 68px;
     margin-top: 96px;
+
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+      gap: 50px;
+    }
   }
   &__input-item {
     width: 150px;
@@ -138,8 +167,16 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     @include font(bold, 54px, 74px, #000);
-    @include adaptiv-font(54, 30);
+    @include adaptiv-font(54, 15);
     text-align: center;
+
+    @media (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      @include font(bold, 54px, 45px, #000);
+      @include adaptiv-font(54, 15);
+    }
   }
 
   &__photo-select {
@@ -157,6 +194,12 @@
     width: 200px;
     height: 200px;
     border-radius: 75px;
+
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 100px;
+      border-radius: 35px;
+    }
   }
 
   &__photo-placeholder {
@@ -169,15 +212,29 @@
     align-items: center;
     @include font(bold, 54px, 74px, #000);
     @include adaptiv-font(54, 30);
+
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 100px;
+      border-radius: 35px;
+    }
   }
 
   &__photo-placeholder-login-3 {
     margin-top: 68px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__photo-name {
     @include font(bold, 42px, 57px, #000);
-    @include adaptiv-font(42, 30);
+    @include adaptiv-font(42, 15);
+
+    @media (max-width: 767px) {
+      @include font(bold, 42px, 37px, #000);
+      @include adaptiv-font(42, 14);
+    }
   }
 
   &__photo-name-login-3 {
@@ -186,38 +243,96 @@
 
   &__info {
     @include font(600, 48px, 65px, #000);
-    @include adaptiv-font(48, 20);
+    @include adaptiv-font(48, 14);
     text-align: center;
     max-width: 711px;
     width: 100%;
+    @media (max-width: 767px) {
+      @include font(600, 48px, 35px, #000);
+      @include adaptiv-font(48, 14);
+    }
   }
 
   &__info-login-1 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__info-login-2 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__info-login-3 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__info-login-4 {
     margin-top: 10px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__info-login-5 {
     margin-top: 45px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__info-login-6 {
     margin-top: 77px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__input-name {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    text-align: center;
+    @include font(normal, 42px, 57px, #000000);
+    @include adaptiv-font(42, 20);
+
+    &::placeholder {
+    }
+
+    @media (max-width: 767px) {
+      @include font(normal, 42px, 35px, #000000);
+      @include adaptiv-font(42, 15);
+    }
+  }
+
+  &__input-name-login-2 {
+    margin-top: 79px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
+  }
+
+  &__input-tel {
+    max-width: 600px;
+    width: 100%;
     height: 70px;
     background: #ffffff;
     border: 3px solid #000000;
@@ -227,22 +342,10 @@
     @include adaptiv-font(42, 20);
     &::placeholder {
     }
-  }
 
-  &__input-name-login-2 {
-    margin-top: 79px;
-  }
-
-  &__input-tel {
-    width: 600px;
-    height: 70px;
-    background: #ffffff;
-    border: 3px solid #000000;
-    border-radius: 25px;
-    text-align: center;
-    @include font(normal, 42px, 57px, #000000);
-    @include adaptiv-font(42, 20);
-    &::placeholder {
+    @media (max-width: 767px) {
+      @include font(normal, 42px, 35px, #000000);
+      @include adaptiv-font(42, 15);
     }
   }
 
@@ -259,7 +362,7 @@
 
   &__photo-input-castom {
     @include font(600, 42px, 57px, #5b75a6);
-    @include adaptiv-font(42, 20);
+    @include adaptiv-font(42, 15);
     &:hover {
       cursor: pointer;
     }
@@ -267,6 +370,9 @@
 
   &__photo-input-castom-login-4 {
     margin-top: 48px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__button {
@@ -282,45 +388,81 @@
       cursor: pointer;
       background: #5b75a6e7;
     }
+
+    @media (max-width: 767px) {
+      max-width: 350px;
+      width: 100%;
+      height: 70px;
+    }
   }
 
   &__button-login-1 {
     margin-top: 96px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__button-login-2 {
     margin-top: 70px;
     width: 250px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+      width: 100%;
+    }
   }
 
   &__button-login-3 {
     margin-top: 47px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__button-login-4 {
     margin-top: 46px;
     width: 250px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+      width: 100%;
+    }
   }
 
   &__button-login-5 {
     margin-top: 45px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__button-login-6 {
     margin-top: 96px;
+    @media (max-width: 767px) {
+      margin-top: 3vmax;
+    }
   }
 
   &__button-title {
     @include font(600, 30px, 41px, #fff);
-    @include adaptiv-font(30, 10);
+    @include adaptiv-font(30, 20);
+
+    @media (max-width: 767px) {
+      @include font(600, 30px, 25px, #fff);
+      @include adaptiv-font(30, 14);
+    }
   }
 
   &__link-sign-in {
     @include font(600, 30px, 41px, #5b75a6);
-    @include adaptiv-font(30, 10);
+    @include adaptiv-font(30, 15);
     &:hover {
       cursor: pointer;
       color: #5b75a6e7;
+
+      @media (max-width: 767px) {
+        @include font(600, 30px, 25px, #5b75a6);
+        @include adaptiv-font(30, 14);
+      }
     }
   }
 
@@ -349,10 +491,11 @@
   }
 
   &__policy {
-    width: 674px;
+    max-width: 674px;
+    width: 100%;
     text-align: center;
     @include font(600, 30px, 41px, #55ab67);
-    @include adaptiv-font(30, 10);
+    @include adaptiv-font(30, 15);
   }
 
   &__policy-login-5 {
@@ -361,6 +504,13 @@
 
   &__policy-login-6 {
     margin-top: 30px;
+  }
+
+  &__loader {
+    @media (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -454,6 +604,8 @@
     flex-wrap: wrap;
     column-gap: 115px;
     row-gap: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   &__list-item {

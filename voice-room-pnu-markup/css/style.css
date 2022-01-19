@@ -130,6 +130,7 @@ h6 {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2vmax;
 }
 .header__container {
   display: flex;
@@ -137,10 +138,20 @@ h6 {
   justify-content: space-between;
   margin-top: 70px;
 }
+@media (max-width: 575px) {
+  .header__logo {
+    width: 100px;
+  }
+}
 .header__user {
   display: flex;
   column-gap: 58px;
   align-items: center;
+}
+@media (max-width: 575px) {
+  .header__user {
+    column-gap: 20px;
+  }
 }
 .header__user-name {
   font-family: Nunito;
@@ -149,7 +160,7 @@ h6 {
   font-size: 25px;
   line-height: 34px;
   color: #000;
-  font-size: calc(34px + -9 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 10 * ((100vw - 320px) / 1600));
 }
 .header__user-avatar {
   width: 50px;
@@ -190,7 +201,7 @@ h6 {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
-  padding: 2vmax 1vmax;
+  padding: 2vmax 2vmax;
 }
 .main__container {
   max-width: 1920px;
@@ -203,14 +214,24 @@ h6 {
   height: 100%;
   background-color: #ffffff;
   border-radius: 50px;
-  padding: 1vmax;
+  padding: 2vmax;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .main__bg {
+    height: max-content;
+  }
+}
 .main__bg-login-7 {
   justify-content: center;
   row-gap: 25px;
+}
+@media (max-width: 767px) {
+  .main__bg-login-7 {
+    row-gap: 10px;
+  }
 }
 .main__title {
   font-family: Nunito;
@@ -219,26 +240,56 @@ h6 {
   font-size: 54px;
   line-height: 74px;
   color: #000;
-  font-size: calc(20px + 34 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
   text-align: center;
 }
 .main__title-login-1 {
   margin-top: 77px;
 }
+@media (max-width: 767px) {
+  .main__title-login-1 {
+    margin-top: 3vmax;
+  }
+}
 .main__title-login-2 {
   margin-top: 77px;
+}
+@media (max-width: 767px) {
+  .main__title-login-2 {
+    margin-top: 3vmax;
+  }
 }
 .main__title-login-3 {
   margin-top: 77px;
 }
+@media (max-width: 767px) {
+  .main__title-login-3 {
+    margin-top: 3vmax;
+  }
+}
 .main__title-login-4 {
   margin-top: 77px;
+}
+@media (max-width: 767px) {
+  .main__title-login-4 {
+    margin-top: 3vmax;
+  }
 }
 .main__title-login-5 {
   margin-top: 77px;
 }
+@media (max-width: 767px) {
+  .main__title-login-5 {
+    margin-top: 3vmax;
+  }
+}
 .main__title-login-6 {
   margin-top: 77px;
+}
+@media (max-width: 767px) {
+  .main__title-login-6 {
+    margin-top: 3vmax;
+  }
 }
 .main__title-login-7 {
   margin-top: 0px;
@@ -247,6 +298,12 @@ h6 {
   display: flex;
   gap: 68px;
   margin-top: 96px;
+}
+@media (max-width: 767px) {
+  .main__input-number {
+    margin-top: 3vmax;
+    gap: 50px;
+  }
 }
 .main__input-item {
   width: 150px;
@@ -262,8 +319,22 @@ h6 {
   font-size: 54px;
   line-height: 74px;
   color: #000;
-  font-size: calc(30px + 24 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
   text-align: center;
+}
+@media (max-width: 767px) {
+  .main__input-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 45px;
+    color: #000;
+    font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
+  }
 }
 .main__photo-select {
   display: flex;
@@ -278,6 +349,13 @@ h6 {
   width: 200px;
   height: 200px;
   border-radius: 75px;
+}
+@media (max-width: 767px) {
+  .main__photo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+  }
 }
 .main__photo-placeholder {
   width: 200px;
@@ -295,8 +373,20 @@ h6 {
   color: #000;
   font-size: calc(30px + 24 * ((100vw - 320px) / 1600));
 }
+@media (max-width: 767px) {
+  .main__photo-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+  }
+}
 .main__photo-placeholder-login-3 {
   margin-top: 68px;
+}
+@media (max-width: 767px) {
+  .main__photo-placeholder-login-3 {
+    margin-top: 3vmax;
+  }
 }
 .main__photo-name {
   font-family: Nunito;
@@ -305,7 +395,18 @@ h6 {
   font-size: 42px;
   line-height: 57px;
   color: #000;
-  font-size: calc(30px + 12 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 767px) {
+  .main__photo-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 37px;
+    color: #000;
+    font-size: calc(14px + 28 * ((100vw - 320px) / 1600));
+  }
 }
 .main__photo-name-login-3 {
   margin-top: 11px;
@@ -317,31 +418,80 @@ h6 {
   font-size: 48px;
   line-height: 65px;
   color: #000;
-  font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 34 * ((100vw - 320px) / 1600));
   text-align: center;
   max-width: 711px;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .main__info {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 35px;
+    color: #000;
+    font-size: calc(14px + 34 * ((100vw - 320px) / 1600));
+  }
+}
 .main__info-login-1 {
   margin-top: 77px;
+}
+@media (max-width: 767px) {
+  .main__info-login-1 {
+    margin-top: 3vmax;
+  }
 }
 .main__info-login-2 {
   margin-top: 77px;
 }
+@media (max-width: 767px) {
+  .main__info-login-2 {
+    margin-top: 3vmax;
+  }
+}
 .main__info-login-3 {
   margin-top: 77px;
+}
+@media (max-width: 767px) {
+  .main__info-login-3 {
+    margin-top: 3vmax;
+  }
 }
 .main__info-login-4 {
   margin-top: 10px;
 }
+@media (max-width: 767px) {
+  .main__info-login-4 {
+    margin-top: 3vmax;
+  }
+}
 .main__info-login-5 {
   margin-top: 45px;
+}
+@media (max-width: 767px) {
+  .main__info-login-5 {
+    margin-top: 3vmax;
+  }
 }
 .main__info-login-6 {
   margin-top: 77px;
 }
+@media (max-width: 767px) {
+  .main__info-login-6 {
+    margin-top: 3vmax;
+  }
+}
+.main form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .main__input-name {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: 70px;
   background: #ffffff;
   border: 3px solid #000000;
@@ -354,12 +504,29 @@ h6 {
   line-height: 57px;
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 767px) {
+  .main__input-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 35px;
+    color: #000000;
+    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
+  }
 }
 .main__input-name-login-2 {
   margin-top: 79px;
 }
+@media (max-width: 767px) {
+  .main__input-name-login-2 {
+    margin-top: 3vmax;
+  }
+}
 .main__input-tel {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: 70px;
   background: #ffffff;
   border: 3px solid #000000;
@@ -372,6 +539,17 @@ h6 {
   line-height: 57px;
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 767px) {
+  .main__input-tel {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 35px;
+    color: #000000;
+    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
+  }
 }
 .main__input-tel-login-5 {
   margin-top: 45px;
@@ -386,13 +564,18 @@ h6 {
   font-size: 42px;
   line-height: 57px;
   color: #5b75a6;
-  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
 }
 .main__photo-input-castom:hover {
   cursor: pointer;
 }
 .main__photo-input-castom-login-4 {
   margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .main__photo-input-castom-login-4 {
+    margin-top: 3vmax;
+  }
 }
 .main__button {
   display: flex;
@@ -408,25 +591,64 @@ h6 {
   cursor: pointer;
   background: #5b75a6e7;
 }
+@media (max-width: 767px) {
+  .main__button {
+    max-width: 350px;
+    width: 100%;
+    height: 70px;
+  }
+}
 .main__button-login-1 {
   margin-top: 96px;
+}
+@media (max-width: 767px) {
+  .main__button-login-1 {
+    margin-top: 3vmax;
+  }
 }
 .main__button-login-2 {
   margin-top: 70px;
   width: 250px;
 }
+@media (max-width: 767px) {
+  .main__button-login-2 {
+    margin-top: 3vmax;
+    width: 100%;
+  }
+}
 .main__button-login-3 {
   margin-top: 47px;
+}
+@media (max-width: 767px) {
+  .main__button-login-3 {
+    margin-top: 3vmax;
+  }
 }
 .main__button-login-4 {
   margin-top: 46px;
   width: 250px;
 }
+@media (max-width: 767px) {
+  .main__button-login-4 {
+    margin-top: 3vmax;
+    width: 100%;
+  }
+}
 .main__button-login-5 {
   margin-top: 45px;
 }
+@media (max-width: 767px) {
+  .main__button-login-5 {
+    margin-top: 3vmax;
+  }
+}
 .main__button-login-6 {
   margin-top: 96px;
+}
+@media (max-width: 767px) {
+  .main__button-login-6 {
+    margin-top: 3vmax;
+  }
 }
 .main__button-title {
   font-family: Nunito;
@@ -435,7 +657,18 @@ h6 {
   font-size: 30px;
   line-height: 41px;
   color: #fff;
-  font-size: calc(10px + 20 * ((100vw - 320px) / 1600));
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+@media (max-width: 767px) {
+  .main__button-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    color: #fff;
+    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
+  }
 }
 .main__link-sign-in {
   font-family: Nunito;
@@ -444,11 +677,22 @@ h6 {
   font-size: 30px;
   line-height: 41px;
   color: #5b75a6;
-  font-size: calc(10px + 20 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .main__link-sign-in:hover {
   cursor: pointer;
   color: #5b75a6e7;
+}
+@media (max-width: 767px) {
+  .main__link-sign-in:hover {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    color: #5b75a6;
+    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
+  }
 }
 .main__link-sign-in-login-1 {
   margin-top: 11px;
@@ -469,7 +713,8 @@ h6 {
   margin-top: 11px;
 }
 .main__policy {
-  width: 674px;
+  max-width: 674px;
+  width: 100%;
   text-align: center;
   font-family: Nunito;
   font-style: normal;
@@ -477,13 +722,19 @@ h6 {
   font-size: 30px;
   line-height: 41px;
   color: #55ab67;
-  font-size: calc(10px + 20 * ((100vw - 320px) / 1600));
+  font-size: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
 .main__policy-login-5 {
   margin-top: 30px;
 }
 .main__policy-login-6 {
   margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .main__loader {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /*-------- Login End -------*/
@@ -579,6 +830,8 @@ h6 {
   flex-wrap: wrap;
   column-gap: 115px;
   row-gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 .rooms__list-item {
   max-width: 450px;
