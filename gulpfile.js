@@ -1,3 +1,9 @@
+{
+  const { emitWarning } = process;
+  process.emitWarning = (warning, type, code, ...extraArgs) =>
+    code !== "DEP0097" && emitWarning(warning, type, code, ...extraArgs);
+}
+
 // Основний модуль
 import gulp from "gulp"; //Ініціалізація gulp
 // Імпорт шляхів

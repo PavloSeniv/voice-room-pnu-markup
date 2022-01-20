@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -6,6 +7,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -13,6 +15,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -20,6 +23,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -27,6 +31,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: Nunito;
   font-display: swap;
@@ -34,7 +39,9 @@
   font-weight: 600;
   font-style: normal;
 }
+
 /*-------- Обнулення -------*/
+
 * {
   padding: 0;
   margin: 0;
@@ -44,8 +51,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -125,34 +130,30 @@ h6 {
 }
 
 /*-------- Обнулення -------*/
+
 /*-------- Header Start -------*/
+
 .header {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2vmax;
 }
+
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 70px;
 }
-@media (max-width: 575px) {
-  .header__logo {
-    width: 100px;
-  }
-}
+
 .header__user {
   display: flex;
-  column-gap: 58px;
+  -moz-column-gap: 58px;
+       column-gap: 58px;
   align-items: center;
 }
-@media (max-width: 575px) {
-  .header__user {
-    column-gap: 20px;
-  }
-}
+
 .header__user-name {
   font-family: Nunito;
   font-style: normal;
@@ -162,6 +163,7 @@ h6 {
   color: #000;
   font-size: calc(15px + 10 * ((100vw - 320px) / 1600));
 }
+
 .header__user-avatar {
   width: 50px;
   height: 50px;
@@ -169,7 +171,14 @@ h6 {
 }
 
 /*-------- Header End -------*/
+
 /*-------- Scrollbar Start -------*/
+
+::-moz-selection {
+  color: #ffffff;
+  background-color: #5b75a6;
+}
+
 ::selection {
   color: #ffffff;
   background-color: #5b75a6;
@@ -190,7 +199,9 @@ h6 {
 }
 
 /*-------- Scrollbar End -------*/
+
 /*-------- Login Start -------*/
+
 .bg__login {
   background-color: #5b75a6;
 }
@@ -203,10 +214,12 @@ h6 {
   height: 100vh;
   padding: 2vmax 2vmax;
 }
+
 .main__container {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 .main__bg {
   max-width: 1300px;
   width: 100%;
@@ -219,20 +232,12 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 767px) {
-  .main__bg {
-    height: max-content;
-  }
-}
+
 .main__bg-login-7 {
   justify-content: center;
   row-gap: 25px;
 }
-@media (max-width: 767px) {
-  .main__bg-login-7 {
-    row-gap: 10px;
-  }
-}
+
 .main__title {
   font-family: Nunito;
   font-style: normal;
@@ -243,68 +248,41 @@ h6 {
   font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
   text-align: center;
 }
+
 .main__title-login-1 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-1 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-2 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-2 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-3 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-3 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-4 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-4 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-5 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-5 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-6 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__title-login-6 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__title-login-7 {
   margin-top: 0px;
 }
+
 .main__input-number {
   display: flex;
   gap: 68px;
   margin-top: 96px;
 }
-@media (max-width: 767px) {
-  .main__input-number {
-    margin-top: 3vmax;
-    gap: 50px;
-  }
-}
+
 .main__input-item {
   width: 150px;
   height: 150px;
@@ -322,41 +300,24 @@ h6 {
   font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
   text-align: center;
 }
-@media (max-width: 767px) {
-  .main__input-item {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 54px;
-    line-height: 45px;
-    color: #000;
-    font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__photo-select {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .main__photo-select-login-4 {
   margin-top: 10px;
 }
+
 .main__photo-img {
   width: 200px;
   height: 200px;
   border-radius: 75px;
 }
-@media (max-width: 767px) {
-  .main__photo-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 35px;
-  }
-}
+
 .main__photo-placeholder {
   width: 200px;
   height: 200px;
@@ -373,21 +334,11 @@ h6 {
   color: #000;
   font-size: calc(30px + 24 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .main__photo-placeholder {
-    width: 100px;
-    height: 100px;
-    border-radius: 35px;
-  }
-}
+
 .main__photo-placeholder-login-3 {
   margin-top: 68px;
 }
-@media (max-width: 767px) {
-  .main__photo-placeholder-login-3 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__photo-name {
   font-family: Nunito;
   font-style: normal;
@@ -397,20 +348,11 @@ h6 {
   color: #000;
   font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .main__photo-name {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 37px;
-    color: #000;
-    font-size: calc(14px + 28 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__photo-name-login-3 {
   margin-top: 11px;
 }
+
 .main__info {
   font-family: Nunito;
   font-style: normal;
@@ -423,65 +365,31 @@ h6 {
   max-width: 711px;
   width: 100%;
 }
-@media (max-width: 767px) {
-  .main__info {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 35px;
-    color: #000;
-    font-size: calc(14px + 34 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__info-login-1 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__info-login-1 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__info-login-2 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__info-login-2 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__info-login-3 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__info-login-3 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__info-login-4 {
   margin-top: 10px;
 }
-@media (max-width: 767px) {
-  .main__info-login-4 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__info-login-5 {
   margin-top: 45px;
 }
-@media (max-width: 767px) {
-  .main__info-login-5 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__info-login-6 {
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .main__info-login-6 {
-    margin-top: 3vmax;
-  }
-}
+
 .main form {
   display: flex;
   width: 100%;
@@ -489,6 +397,7 @@ h6 {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .main__input-name {
   max-width: 600px;
   width: 100%;
@@ -505,25 +414,11 @@ h6 {
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .main__input-name {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 35px;
-    color: #000000;
-    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__input-name-login-2 {
   margin-top: 79px;
 }
-@media (max-width: 767px) {
-  .main__input-name-login-2 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__input-tel {
   max-width: 600px;
   width: 100%;
@@ -540,23 +435,15 @@ h6 {
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .main__input-tel {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 35px;
-    color: #000000;
-    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__input-tel-login-5 {
   margin-top: 45px;
 }
+
 .main__photo-input-login-4 {
   display: none;
 }
+
 .main__photo-input-castom {
   font-family: Nunito;
   font-style: normal;
@@ -566,90 +453,58 @@ h6 {
   color: #5b75a6;
   font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
 }
+
 .main__photo-input-castom:hover {
   cursor: pointer;
 }
+
 .main__photo-input-castom-login-4 {
   margin-top: 48px;
 }
-@media (max-width: 767px) {
-  .main__photo-input-castom-login-4 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__button {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 11px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   width: 350px;
   height: 70px;
   background: #5b75a6;
   border-radius: 50px;
 }
+
 .main__button:hover {
   cursor: pointer;
   background: #5b75a6e7;
 }
-@media (max-width: 767px) {
-  .main__button {
-    max-width: 350px;
-    width: 100%;
-    height: 70px;
-  }
-}
+
 .main__button-login-1 {
   margin-top: 96px;
 }
-@media (max-width: 767px) {
-  .main__button-login-1 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__button-login-2 {
   margin-top: 70px;
   width: 250px;
 }
-@media (max-width: 767px) {
-  .main__button-login-2 {
-    margin-top: 3vmax;
-    width: 100%;
-  }
-}
+
 .main__button-login-3 {
   margin-top: 47px;
 }
-@media (max-width: 767px) {
-  .main__button-login-3 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__button-login-4 {
   margin-top: 46px;
   width: 250px;
 }
-@media (max-width: 767px) {
-  .main__button-login-4 {
-    margin-top: 3vmax;
-    width: 100%;
-  }
-}
+
 .main__button-login-5 {
   margin-top: 45px;
 }
-@media (max-width: 767px) {
-  .main__button-login-5 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__button-login-6 {
   margin-top: 96px;
 }
-@media (max-width: 767px) {
-  .main__button-login-6 {
-    margin-top: 3vmax;
-  }
-}
+
 .main__button-title {
   font-family: Nunito;
   font-style: normal;
@@ -659,17 +514,7 @@ h6 {
   color: #fff;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .main__button-title {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 25px;
-    color: #fff;
-    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__link-sign-in {
   font-family: Nunito;
   font-style: normal;
@@ -679,39 +524,36 @@ h6 {
   color: #5b75a6;
   font-size: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
+
 .main__link-sign-in:hover {
   cursor: pointer;
   color: #5b75a6e7;
 }
-@media (max-width: 767px) {
-  .main__link-sign-in:hover {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 25px;
-    color: #5b75a6;
-    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
-  }
-}
+
 .main__link-sign-in-login-1 {
   margin-top: 11px;
 }
+
 .main__link-sign-in-login-2 {
   margin-top: 11px;
 }
+
 .main__link-sign-in-login-3 {
   margin-top: 11px;
 }
+
 .main__link-sign-in-login-4 {
   margin-top: 11px;
 }
+
 .main__link-sign-in-login-5 {
   margin-top: 11px;
 }
+
 .main__link-sign-in-login-6 {
   margin-top: 11px;
 }
+
 .main__policy {
   max-width: 674px;
   width: 100%;
@@ -724,21 +566,19 @@ h6 {
   color: #55ab67;
   font-size: calc(15px + 15 * ((100vw - 320px) / 1600));
 }
+
 .main__policy-login-5 {
   margin-top: 30px;
 }
+
 .main__policy-login-6 {
   margin-top: 30px;
 }
-@media (max-width: 767px) {
-  .main__loader {
-    width: 50px;
-    height: 50px;
-  }
-}
 
 /*-------- Login End -------*/
+
 /*-------- Rooms Start -------*/
+
 .bg__white {
   background-color: #fff;
 }
@@ -746,16 +586,13 @@ h6 {
 .rooms {
   margin-top: 70px;
 }
-@media (max-width: 767px) {
-  .rooms {
-    margin-top: 3vmax;
-  }
-}
+
 .rooms__container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
+
 .rooms__info {
   display: flex;
   flex-wrap: wrap;
@@ -763,26 +600,16 @@ h6 {
   justify-content: space-between;
   padding: 0 2vmax;
 }
-@media (max-width: 767px) {
-  .rooms__info {
-    justify-content: center;
-    row-gap: 20px;
-  }
-}
+
 .rooms__info-title {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   justify-content: center;
   margin-top: 77px;
 }
-@media (max-width: 767px) {
-  .rooms__info-title {
-    justify-content: center;
-    row-gap: 20px;
-    margin-top: 3vmax;
-  }
-}
+
 .rooms__title {
   font-family: Nunito;
   font-style: normal;
@@ -792,10 +619,12 @@ h6 {
   color: #000;
   font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
 }
+
 .rooms__button-explore {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   width: 250px;
   height: 70px;
   background: #e0e0e0;
@@ -803,6 +632,7 @@ h6 {
   padding: 10px 19px;
   justify-content: center;
 }
+
 .rooms__button-explore-title {
   font-family: Nunito;
   font-style: normal;
@@ -812,10 +642,12 @@ h6 {
   color: #000;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
+
 .rooms__new-room {
   display: flex;
   align-items: center;
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   width: 250px;
   height: 70px;
   background: #55ab67;
@@ -823,6 +655,7 @@ h6 {
   padding: 10px 16px;
   justify-content: center;
 }
+
 .rooms__new-room-title {
   font-family: Nunito;
   font-style: normal;
@@ -832,41 +665,46 @@ h6 {
   color: #fff;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .rooms__list-bg {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
   min-height: 100vh;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
   max-height: max-content;
   padding: 0 2vmax 2vmax 2vmax;
 }
+
 .rooms__list-container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
+
 .rooms__list {
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 115px;
+  -moz-column-gap: 115px;
+       column-gap: 115px;
   row-gap: 40px;
   align-items: center;
   justify-content: center;
 }
+
 .rooms__list-item {
   max-width: 450px;
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   background: #5b75a6;
   border-radius: 35px;
   padding: 22px 47px 24px 47px;
 }
-@media (max-width: 767px) {
-  .rooms__list-item {
-    padding: 2vmax;
-  }
-}
+
 .rooms__list-item-title {
   font-family: Nunito;
   font-style: normal;
@@ -876,23 +714,16 @@ h6 {
   color: #fff;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 767px) {
-  .rooms__list-item-title {
-    text-align: center;
-  }
-}
+
 .rooms__list-item-logo-users {
   margin-top: 6px;
   display: flex;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 767px) {
-  .rooms__list-item-logo-users {
-    justify-content: center;
-  }
-}
+
 .rooms__list-img-user {
   display: flex;
   gap: 16px 9px;
@@ -901,29 +732,30 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 767px) {
-  .rooms__list-img-user {
-    justify-content: center;
-  }
-}
+
 .rooms__list-img-user-avatar {
   width: 50px;
   height: 50px;
   border-radius: 15px;
 }
+
 .rooms__list-item-users {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
+
 .rooms__list-item-users-block {
   display: flex;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   align-items: center;
 }
+
 .rooms__list-item-users-block svg {
   fill: #fff;
 }
+
 .rooms__list-item-users-name {
   font-family: Nunito;
   font-style: normal;
@@ -933,20 +765,26 @@ h6 {
   color: #fff;
   font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
 }
+
 .rooms__list-item-count-user {
   display: flex;
-  column-gap: 19px;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
   margin-top: 16px;
   justify-content: flex-end;
 }
+
 .rooms__list-item-count-user-rooms {
   display: flex;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   align-items: center;
 }
+
 .rooms__list-item-count-user-rooms svg {
   fill: #fff;
 }
+
 .rooms__list-item-count-user-rooms-title {
   font-family: Nunito;
   font-style: normal;
@@ -956,14 +794,18 @@ h6 {
   color: #fff;
   font-size: calc(10px + 5 * ((100vw - 320px) / 1600));
 }
+
 .rooms__list-item-count-user-voice {
   display: flex;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   align-items: center;
 }
+
 .rooms__list-item-count-user-voice svg {
   fill: #fff;
 }
+
 .rooms__list-item-count-user-voice-title {
   font-family: Nunito;
   font-style: normal;
@@ -975,28 +817,35 @@ h6 {
 }
 
 /*-------- Rooms End -------*/
+
 /*-------- People Start -------*/
+
 .people {
   margin-top: 70px;
 }
+
 .people__container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
+
 .people__info {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 2vmax;
 }
+
 .people__info-title {
   display: flex;
-  column-gap: 46px;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
   justify-content: center;
   margin-top: 77px;
   align-items: center;
 }
+
 .people__title {
   font-family: Nunito;
   font-style: normal;
@@ -1006,18 +855,23 @@ h6 {
   color: #000;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .people__list-user-bg {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
+
 .people__list-user-container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
   padding: 2vmax;
 }
+
 .people__list-info-room {
   padding: 2vmax;
   padding-top: 40px;
@@ -1025,13 +879,10 @@ h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
-@media (max-width: 877px) {
-  .people__list-info-room {
-    justify-content: center;
-  }
-}
+
 .people__list-room-title {
   font-family: Nunito;
   font-style: normal;
@@ -1041,24 +892,24 @@ h6 {
   color: #000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 575px) {
-  .people__list-room-title {
-    text-align: center;
-  }
-}
+
 .people__block-leave {
   display: flex;
-  column-gap: 34px;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
 }
+
 .people__button-hand {
   width: 70px;
   height: 70px;
   background: #f2f2f2;
   border-radius: 50px;
 }
+
 .people__button-hand:hover svg {
   fill: #ebeb0a;
 }
+
 .people__button-leave {
   display: flex;
   justify-content: center;
@@ -1077,10 +928,12 @@ h6 {
   color: #55ab67;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
+
 .people__button-leave:hover {
   background: #5b75a6;
   color: #000;
 }
+
 .people__list-voice-user {
   display: flex;
   gap: 40px 10px;
@@ -1088,29 +941,28 @@ h6 {
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 767px) {
-  .people__list-voice-user {
-    justify-content: center;
-  }
-}
+
 .people__list-voice-user-item {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   align-items: center;
 }
+
 .people__list-voice-user-block-photo {
   border: 4px solid #5b75a6;
   border-radius: 35px;
   position: relative;
   padding: 5px;
 }
+
 .people__list-voice-user-item-photo {
   width: 105px;
   height: 105px;
   border-radius: 35px;
   border: 1.875px solid rgba(0, 0, 0, 0.2);
 }
+
 .people__list-voice-user-item-active {
   display: flex;
   justify-content: center;
@@ -1124,9 +976,11 @@ h6 {
   height: 40px;
   border-radius: 50px;
 }
+
 .people__list-voice-user-item-active svg {
   fill: #000;
 }
+
 .people__list-voice-user-item-name {
   font-family: Nunito;
   font-style: normal;
@@ -1136,9 +990,11 @@ h6 {
   color: #000;
   font-size: calc(25px + 10 * ((100vw - 320px) / 1600));
 }
+
 .people__block-users {
   margin-top: 12px;
 }
+
 .people__block-users-title {
   font-family: Nunito;
   font-style: normal;
@@ -1148,6 +1004,7 @@ h6 {
   color: #333;
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
+
 .people__block-users-list {
   margin-top: 39px;
   display: flex;
@@ -1156,17 +1013,20 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+
 .people__block-users-item {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   align-items: center;
 }
+
 .people__block-users-photo {
   width: 105px;
   height: 105px;
   border-radius: 35px;
 }
+
 .people__block-users-name {
   font-family: Nunito;
   font-style: normal;
@@ -1178,28 +1038,35 @@ h6 {
 }
 
 /*-------- People End -------*/
+
 /*-------- About Start -------*/
+
 .about {
   margin-top: 70px;
 }
+
 .about__container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
+
 .about__info {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 2vmax;
 }
+
 .about__info-title {
   display: flex;
-  column-gap: 46px;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
   justify-content: center;
   margin-top: 77px;
   align-items: center;
 }
+
 .about__title {
   font-family: Nunito;
   font-style: normal;
@@ -1209,17 +1076,22 @@ h6 {
   color: #000;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .about__user-bg {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
+
 .about__user-container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
+
 .about__user-row {
   padding: 2vmax;
   padding-top: 40px;
@@ -1227,14 +1099,11 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 20px;
 }
-@media (max-width: 1259px) {
-  .about__user-row {
-    justify-content: center;
-  }
-}
+
 .about__user-info {
   max-width: 900px;
   width: 100%;
@@ -1242,30 +1111,30 @@ h6 {
   flex-direction: column;
   row-gap: 30px;
 }
+
 .about__user-info-main {
   display: flex;
-  column-gap: 54px;
+  -moz-column-gap: 54px;
+       column-gap: 54px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
 }
-@media (max-width: 767px) {
-  .about__user-info-main {
-    justify-content: center;
-  }
-}
+
 .about__user-info-main-photo {
   width: 120px;
   height: 120px;
   border: 1.875px solid rgba(0, 0, 0, 0.2);
   border-radius: 35px;
 }
+
 .about__user-info-username {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
+
 .about__username {
   font-family: Nunito;
   font-style: normal;
@@ -1275,6 +1144,7 @@ h6 {
   color: #000;
   font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
 }
+
 .about__logname {
   font-family: Nunito;
   font-style: normal;
@@ -1284,6 +1154,7 @@ h6 {
   color: #333;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .about__user-button-follow {
   max-width: 300px;
   width: 100%;
@@ -1300,11 +1171,13 @@ h6 {
   color: #5b75a6;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .about__user-bio {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
+
 .about__user-bio-info {
   font-family: Nunito;
   font-style: normal;
@@ -1315,10 +1188,12 @@ h6 {
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
   text-align: justify;
 }
+
 .about__user-subscripe {
   display: flex;
   justify-content: end;
 }
+
 .about__user-subscripe-info {
   background: #ffffff;
   border-radius: 30px;
@@ -1326,17 +1201,20 @@ h6 {
   width: 100%;
   height: 114px;
   display: flex;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   justify-content: center;
   align-items: center;
   padding: 1vmax;
 }
+
 .about__user-followers {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 2px;
 }
+
 .about__user-followers-count {
   font-family: Nunito;
   font-style: normal;
@@ -1346,6 +1224,7 @@ h6 {
   color: #333;
   font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
 }
+
 .about__user-followers-title {
   font-family: Nunito;
   font-style: normal;
@@ -1355,12 +1234,14 @@ h6 {
   color: #333;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
+
 .about__user-following {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 2px;
 }
+
 .about__user-following-count {
   font-family: Nunito;
   font-style: normal;
@@ -1370,6 +1251,7 @@ h6 {
   color: #333;
   font-size: calc(21px + 21 * ((100vw - 320px) / 1600));
 }
+
 .about__user-following-title {
   font-family: Nunito;
   font-style: normal;
@@ -1381,7 +1263,9 @@ h6 {
 }
 
 /*-------- About End -------*/
+
 /*-------- Developer Block Start -------*/
+
 .link-login {
   display: flex;
   position: absolute;
@@ -1389,6 +1273,7 @@ h6 {
   left: 10px;
   flex-direction: column;
 }
+
 .link-login__next {
   font-family: Nunito;
   font-style: normal;
@@ -1398,11 +1283,13 @@ h6 {
   color: #000000;
   font-size: calc(10px + 20 * ((100vw - 320px) / 1600));
 }
+
 .link-login__next:hover {
   color: #fff;
 }
 
 /*-------- Developer Block End -------*/
+
 main__container {
   display: flex;
   align-items: center;
@@ -1410,9 +1297,11 @@ main__container {
   height: 100vh;
   position: relative;
 }
+
 main__container.active {
   display: none;
 }
+
 main__button-open-pop-up {
   display: block;
   height: 34px;
@@ -1429,9 +1318,11 @@ main__button-open-pop-up {
   font-size: 15px;
   color: #000;
 }
+
 main__button-open-pop-up.active {
   display: none;
 }
+
 main__button-open-pop-up:hover {
   background-color: #979797;
   color: #fff;
@@ -1444,7 +1335,9 @@ main__button-open-pop-up:hover {
 }
 
 /*-------- Main End -------*/
+
 /*-------- Pop Up Start -------*/
+
 .pop-up {
   top: 0;
   left: 0;
@@ -1453,12 +1346,14 @@ main__button-open-pop-up:hover {
   opacity: 0;
   pointer-events: none;
 }
+
 .pop-up.active {
   display: block;
   opacity: 1;
   pointer-events: all;
   transition: 0.5s all;
 }
+
 .pop-up__bg-container {
   max-width: 1920px;
   width: 100%;
@@ -1467,15 +1362,13 @@ main__button-open-pop-up:hover {
   padding: 46px 39px;
   background: rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 1919px) {
-  .pop-up__bg-container {
-    padding: 1vmax;
-  }
-}
+
 .pop-up__dialog {
   max-width: 1842px;
   width: 100%;
   min-height: 699px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
   max-height: max-content;
   margin: 0 auto;
   background: #ffffff;
@@ -1485,29 +1378,29 @@ main__button-open-pop-up:hover {
   position: relative;
   top: 8%;
 }
-@media (max-width: 1879px) {
-  .pop-up__dialog {
-    padding: 1vmax;
-  }
-}
+
 .pop-up__close {
   position: absolute;
   top: 46px;
   right: 42px;
 }
+
 .pop-up__close:hover {
   cursor: pointer;
 }
+
 .pop-up__close svg:hover {
   transform: scale(1.1);
   transition: all 0.5s linear;
 }
+
 .pop-up__info {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
   align-items: center;
 }
+
 .pop-up__title {
   font-family: Nunito;
   font-style: normal;
@@ -1517,6 +1410,7 @@ main__button-open-pop-up:hover {
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
+
 .pop-up__name-room {
   font-family: Nunito;
   font-style: normal;
@@ -1528,6 +1422,7 @@ main__button-open-pop-up:hover {
   align-self: flex-start;
   width: 100%;
 }
+
 .pop-up__title-room-type {
   font-family: Nunito;
   font-style: normal;
@@ -1537,15 +1432,18 @@ main__button-open-pop-up:hover {
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
+
 .pop-up__room-type-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   row-gap: 20px;
   justify-content: center;
   align-items: center;
 }
+
 .pop-up__room-type-item {
   width: 150px;
   height: 208px;
@@ -1557,9 +1455,11 @@ main__button-open-pop-up:hover {
   align-items: center;
   justify-content: center;
 }
+
 .pop-up__room-type-item:hover {
   background: #5b75a6;
 }
+
 .pop-up__type-bg {
   width: 115px;
   height: 105px;
@@ -1569,6 +1469,7 @@ main__button-open-pop-up:hover {
   align-items: center;
   justify-content: center;
 }
+
 .pop-up__room-type-name {
   font-family: Nunito;
   font-style: normal;
@@ -1578,6 +1479,7 @@ main__button-open-pop-up:hover {
   color: #fff;
   font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
 }
+
 .pop-up__title-button {
   font-family: Nunito;
   font-style: normal;
@@ -1587,6 +1489,7 @@ main__button-open-pop-up:hover {
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
+
 .pop-up__button-create {
   width: 250px;
   height: 70px;
@@ -1603,7 +1506,8 @@ main__button-open-pop-up:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .body {
@@ -1613,8 +1517,286 @@ main__button-open-pop-up:hover {
 .body.active {
   overflow-y: hidden;
 }
+
+@media (max-width: 1919px) {
+  .pop-up__bg-container {
+    padding: 1vmax;
+  }
+}
+
+@media (max-width: 1879px) {
+  .pop-up__dialog {
+    padding: 1vmax;
+  }
+}
+
+@media (max-width: 1259px) {
+  .about__user-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 877px) {
+  .people__list-info-room {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .body.active {
     overflow-y: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__bg {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+
+  .main__bg-login-7 {
+    row-gap: 10px;
+  }
+
+  .main__title-login-1 {
+    margin-top: 3vmax;
+  }
+
+  .main__title-login-2 {
+    margin-top: 3vmax;
+  }
+
+  .main__title-login-3 {
+    margin-top: 3vmax;
+  }
+
+  .main__title-login-4 {
+    margin-top: 3vmax;
+  }
+
+  .main__title-login-5 {
+    margin-top: 3vmax;
+  }
+
+  .main__title-login-6 {
+    margin-top: 3vmax;
+  }
+
+  .main__input-number {
+    margin-top: 3vmax;
+    gap: 50px;
+  }
+
+  .main__input-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 45px;
+    color: #000;
+    font-size: calc(15px + 39 * ((100vw - 320px) / 1600));
+  }
+
+  .main__photo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+  }
+
+  .main__photo-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+  }
+
+  .main__photo-placeholder-login-3 {
+    margin-top: 3vmax;
+  }
+
+  .main__photo-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 37px;
+    color: #000;
+    font-size: calc(14px + 28 * ((100vw - 320px) / 1600));
+  }
+
+  .main__info {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 35px;
+    color: #000;
+    font-size: calc(14px + 34 * ((100vw - 320px) / 1600));
+  }
+
+  .main__info-login-1 {
+    margin-top: 3vmax;
+  }
+
+  .main__info-login-2 {
+    margin-top: 3vmax;
+  }
+
+  .main__info-login-3 {
+    margin-top: 3vmax;
+  }
+
+  .main__info-login-4 {
+    margin-top: 3vmax;
+  }
+
+  .main__info-login-5 {
+    margin-top: 3vmax;
+  }
+
+  .main__info-login-6 {
+    margin-top: 3vmax;
+  }
+
+  .main__input-name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 35px;
+    color: #000000;
+    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
+  }
+
+  .main__input-name-login-2 {
+    margin-top: 3vmax;
+  }
+
+  .main__input-tel {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 35px;
+    color: #000000;
+    font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
+  }
+
+  .main__photo-input-castom-login-4 {
+    margin-top: 3vmax;
+  }
+
+  .main__button {
+    max-width: 350px;
+    width: 100%;
+    height: 70px;
+  }
+
+  .main__button-login-1 {
+    margin-top: 3vmax;
+  }
+
+  .main__button-login-2 {
+    margin-top: 3vmax;
+    width: 100%;
+  }
+
+  .main__button-login-3 {
+    margin-top: 3vmax;
+  }
+
+  .main__button-login-4 {
+    margin-top: 3vmax;
+    width: 100%;
+  }
+
+  .main__button-login-5 {
+    margin-top: 3vmax;
+  }
+
+  .main__button-login-6 {
+    margin-top: 3vmax;
+  }
+
+  .main__button-title {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    color: #fff;
+    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
+  }
+
+  .main__link-sign-in:hover {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    color: #5b75a6;
+    font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
+  }
+
+  .main__loader {
+    width: 50px;
+    height: 50px;
+  }
+
+  .rooms {
+    margin-top: 3vmax;
+  }
+
+  .rooms__info {
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .rooms__info-title {
+    justify-content: center;
+    row-gap: 20px;
+    margin-top: 3vmax;
+  }
+
+  .rooms__list-item {
+    padding: 2vmax;
+  }
+
+  .rooms__list-item-title {
+    text-align: center;
+  }
+
+  .rooms__list-item-logo-users {
+    justify-content: center;
+  }
+
+  .rooms__list-img-user {
+    justify-content: center;
+  }
+
+  .people__list-voice-user {
+    justify-content: center;
+  }
+
+  .about__user-info-main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .header__logo {
+    width: 100px;
+  }
+
+  .header__user {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+
+  .people__list-room-title {
+    text-align: center;
   }
 }
