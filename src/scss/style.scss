@@ -200,6 +200,10 @@
       height: 100px;
       border-radius: 35px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__photo-placeholder {
@@ -1116,6 +1120,18 @@
     }
   }
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 /*-------- Developer Block End -------*/
 
 main {
@@ -1314,8 +1330,7 @@ main {
 
 .body.active {
   overflow-y: hidden;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     overflow-y: scroll;
-    
   }
 }

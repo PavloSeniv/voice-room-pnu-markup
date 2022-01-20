@@ -318,6 +318,10 @@ h6 {
   border-radius: 75px;
 }
 
+.main__photo-img:hover {
+  cursor: pointer;
+}
+
 .main__photo-placeholder {
   width: 200px;
   height: 200px;
@@ -1286,6 +1290,20 @@ h6 {
 
 .link-login__next:hover {
   color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*-------- Developer Block End -------*/
